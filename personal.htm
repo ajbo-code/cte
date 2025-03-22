@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: #333;
+            color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode section {
+            background: #444;
+            color: #f4f4f4;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        body.dark-mode h2 {
+            color: #f4f4f4;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #eee;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode ul li {
+            background: #555;
+            color: #f4f4f4;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        body.dark-mode a {
+            color: #f4f4f4;
+        }
+
+        a:hover {
+            color: #ff6347;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .project {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode .project {
+            background: #555;
+            color: #f4f4f4;
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        .project p {
+            font-size: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        /* Dark Mode Toggle Button */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode .dark-mode-toggle {
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+        <i class="fas fa-moon"></i> Dark Mode
+    </button>
+
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+    </header>
+
+    <nav>
+        <a href="#personal-info">Personal Info</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#club-activities">Club Activities</a>
+        <a href="#projects">Projects</a>
+        <a href="#social-media">Social Media</a>
+    </nav>
+
+    <section id="personal-info">
+        <h2>Personal Info</h2>
+        <p><strong>Name:</strong> Yosef Birhanu</p>
+        <p><strong>Age:</strong> 17</p>
+        <p><strong>Location:</strong> Bulbula, Ethiopia</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Footbal </li>
+            <li>Web Developement </li>
+            
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Level:</strong> High School</p>
+       
+    </section>
+
+    <section id="club-activities">
+        <h2>Club Activities</h2>
+        <p><strong>Sports:</strong> In Aygod Club</p>
+        <p><strong>Science Club:</strong> In Aygoda club</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="https://via.placeholder.com/600x400" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>I Don't Have.</p>
+        </div>
+        <div class="project">
+            <img src="https://via.placeholder.com/600x400" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>I Don't Have.</p>
+        </div>
+    </section>
+
+    <section id="social-media">
+        <h2>Social Media Links</h2>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/ajbo-code" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Yosef. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const button = document.querySelector('.dark-mode-toggle');
+            if (document.body.classList.contains('dark-mode')) {
+                button.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+            } else {
+                button.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+            }
+        }
+    </script>
+</body>
+</html>
